@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register Team – Fraggix</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="js/send.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="fraggix-logo.png" alt="Fraggix Logo" class="logo" />
+    <h1>Register Your Team</h1>
+    <nav>
+      <a href="index.html">Rules</a>
+      <a href="register.html">Register</a>
+      <a href="teamlist.html">Teams</a>
+    </nav>
+  </header>
+
+  <main>
+    <form onsubmit="sendTelegramMessage(event)">
+      <label>Team Name: <input type="text" id="team" required></label><br>
+
+      <h3>Players (Main)</h3>
+      <label>Player 1: <input type="text" id="p1" required></label>
+      <label>UID: <input type="text" id="uid1" required></label>
+      <label>WhatsApp: <input type="tel" id="wa1" required></label><br>
+
+      <label>Player 2: <input type="text" id="p2" required></label>
+      <label>UID: <input type="text" id="uid2" required></label>
+      <label>WhatsApp: <input type="tel" id="wa2" required></label><br>
+
+      <label>Player 3: <input type="text" id="p3" required></label>
+      <label>UID: <input type="text" id="uid3" required></label>
+      <label>WhatsApp: <input type="tel" id="wa3" required></label><br>
+
+      <label>Player 4: <input type="text" id="p4" required></label>
+      <label>UID: <input type="text" id="uid4" required></label>
+      <label>WhatsApp: <input type="tel" id="wa4" required></label><br>
+
+      <h3>Substitutes</h3>
+      <label>Sub 1: <input type="text" id="sub1" required></label>
+      <label>UID: <input type="text" id="uidsub1" required></label><br>
+
+      <label>Sub 2: <input type="text" id="sub2" required></label>
+      <label>UID: <input type="text" id="uidsub2" required></label><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
